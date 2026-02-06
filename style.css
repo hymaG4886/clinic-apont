@@ -1,0 +1,106 @@
+
+body {
+  background-image: url(clinicimg2.jpg);
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+}
+
+nav {
+  color: rgb(218, 214, 228);
+  padding: 15px;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.doctor-list {
+  color: azure;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.doctor-card {
+  border: 1px solid #d24b4b;
+  margin: 10px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+button {
+  background: #2cc3e5;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+button:hover {
+  opacity: 0.5;
+  background-color: rgb(48, 106, 140);
+  color: black;
+}
+
+.form-container {
+  color: aqua;
+  display: none;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 50px;
+  border-width: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#details {
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #2fa9d5;
+  padding: 10px;
+  text-align: center;
+}
+
+#appointmentsTable {
+  color: white;
+}
+
+#completedapointment {
+  color: rgb(97, 210, 97);
+  text-align: center;
+  margin-top: 10px;
+}

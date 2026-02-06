@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online Clinic Appointment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <h2>Online Clinic Appointment Booking Website</h2>
+    <a href="index.html">Home</a>
+    <a href="appointment.html">My Appointments</a>
+  </nav>
+
+  <h1>Available Doctors</h1>
+
+  <div class="doctor-list">
+    
+    <div class="doctor-card">
+      <h3>Dr.C.Asha</h3>
+      <p>Gastroenterologist</p>
+      <p>11:00 AM - 2:00 PM</p>
+      <button onclick="openForm('Dr.C.Asha')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <h3>Dr.M.Keerthi Reddy</h3>
+      <p>Gynecologist</p>
+      <p>11:00 AM - 2:00 PM</p>
+      <button onclick="openForm('Dr.M.Keerthi Reddy')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <h3>Dr.G.Sashikala</h3>
+      <p>Cardiologist</p>
+      <p>9:00 AM - 12:00 PM</p>
+      <button onclick="openForm('Dr.G.Sashikala')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <h3>Dr.S.Haritha</h3>
+      <p>Dermatologist</p>
+      <p>1:00 PM - 4:00 PM</p>
+      <button onclick="openForm('Dr.S.Haritha')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <h3>Dr.M.Anu</h3>
+      <p>Orthopedic Surgeon</p>
+      <p>10:00 AM - 1:00 PM</p>
+      <button onclick="openForm('Dr.M.Anu')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <h3>Dr.K.Mounika</h3>
+      <p>Pediatrician</p>
+      <p>9:00 AM - 12:00 PM</p>
+      <button onclick="openForm('Dr.K.Mounika')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <h3>Dr.A.Vasavi </h3>
+      <p>Neurologist</p>
+      <p>2:00 PM - 5:00 PM</p>
+      <button onclick="openForm('Dr.A.Vasavi ')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <h3>Dr.P.Teja Sree</h3>
+      <p>ENT Specialist</p>
+      <p>10:00 AM - 1:00 PM</p>
+      <button onclick="openForm('Dr.P.Teja Sree')">Book Appointment</button>
+    </div>
+    <div class="doctor-card">
+      <h3>Dr.G.Hymavathi</h3>
+      <p>General Physician</p>
+      <p>10:00 AM - 1:00 PM</p>
+      <button onclick="openForm('Dr.G.Hymavathi')">Book Appointment</button>
+    </div>
+
+    
+  </div>
+
+  <!-- Booking Form -->
+  <div class="form-container" id="formContainer">
+    <h2>Book Appointment</h2>
+
+    <form onsubmit="bookAppointment(event)">
+      <input type="hidden" id="doctorName">
+
+      <label>Patient Name</label>
+      <input type="text"id="patientName" required>
+
+      <label>Email</label>
+      <input type="email" id="email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" required pattern="[0-9]{10}">
+
+      <label>Appointment Date</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+
+    <p id="completedapointment"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
